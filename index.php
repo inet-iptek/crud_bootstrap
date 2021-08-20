@@ -28,6 +28,7 @@
                         <td>
                             <div class="text-center">
                                 <a href="edit.php?id=<?= $dt['id']; ?>" class="btn btn-info">Edit</a>
+                                <a onclick="return confirm('Yakin?')" href="hapus.php?id=<?= $dt['id']; ?>" class="btn btn-danger">Hapus</a>
                             </div>
                         </td>
                     </tr>
