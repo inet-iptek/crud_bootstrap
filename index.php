@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-lg-12 mx-auto">
             <h1>Simple CRUD iNET <?= date('Y'); ?></h1>
-            <a href="" class="btn btn-primary mb-2">Tambah</a>
+            <a href="tambah.php" class="btn btn-primary mb-2">Tambah</a>
             <div class="table-responsive">
                 <table class="table">
                     <tr>
