@@ -21,7 +21,9 @@
                 </div>
 
                 <button type="submit" name="btn" class="btn btn-primary">Tambah</button>
+
             </form>
+            <a href="index.php" class="btn btn-link mt-5">Kembali</a>
         </div>
     </div>
 </div>
