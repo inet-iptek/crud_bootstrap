@@ -16,6 +16,15 @@
         </script>";
     }
 
-    alert("Coba");
+    function redir($r) {
+        echo "<script>
+            document.location = '".$r."';
+        </script>";
+    }
+
+    function val($v) {
+        global $conn;
+        return $conn->real_escape_string($v);
+    }
     
 ?>
