@@ -25,7 +25,11 @@
                         <td><?= $dt['nama']; ?></td>
                         <td><?= $dt['kelas']; ?></td>
                         <td><?= $dt['alamat']; ?></td>
-                        <td></td>
+                        <td>
+                            <div class="text-center">
+                                <a href="edit.php?id=<?= $dt['id']; ?>" class="btn btn-info">Edit</a>
+                            </div>
+                        </td>
                     </tr>
                     <?php endwhile; ?>
                 </table>
