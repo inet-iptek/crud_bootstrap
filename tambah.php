@@ -16,7 +16,7 @@
                 </div>      
                 
                 <div class="form-group">
-                    <label for="alamat">alamat</label>
+                    <label for="alamat">Alamat</label>
                     <textarea name="alamat" class="form-control"></textarea>
                 </div>
 
@@ -27,5 +27,23 @@
 </div>
 <?php include "footer.php"; ?>
 <?php
+    if(isset($_POST['btn'])) {
+        $nama = val($_POST['nama']);
+        $kelas = val($_POST['kelas']);
+        $alamat = val($_POST['alamat']);
 
+        if(empty($nama) || empty($kelas) || empty($alamat)) {
+            alert('Field tidak boleh kosong!');
+        } else {
+            $sql = "INSERT into data(nama,kelas,alamat) VALUES('$nama','$kelas','$alamat')";
+            $add = $conn->query($sql);
+
+            if($add) {
+                alert('Berhasil!');
+                redir('index.php');
+            } else {
+                alert('Gagal!');
+            }
+        }
+    }
 ?>
